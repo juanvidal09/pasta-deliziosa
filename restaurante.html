@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https://images.unsplash.com; object-src 'none'; base-uri 'self'; form-action 'self';"
+    />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    <meta
+      http-equiv="Permissions-Policy"
+      content="geolocation=(), camera=(), microphone=()"
+    />
+    <meta
+      name="description"
+      content="Pastas artesanales francesas e italianas en Bogotá, Colombia."
+    />
+    <title>Pasta Deliziosa | Bogotá</title>
+    <link rel="stylesheet" href="restaurante.CSS" />
+    <script src="restaurante.JS" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container" aria-label="Navegación principal">
+        <a class="brand" href="#inicio">PASTA <span>DELIZIOSA</span></a>
+        <div class="nav-links">
+          <a href="#menu">Menú</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <a class="nav-cta" href="#contacto">Reservar mesa</a>
+      </nav>
+
+      <div class="hero-content container" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow">Bogotá, Colombia · Cocina artesanal</p>
+          <h1>La pasta sabe mejor cuando se comparte.</h1>
+          <p class="hero-description">
+            Recetas francesas e italianas hechas con cariño, ingredientes frescos
+            y todo el sabor de una comida en familia.
+          </p>
+          <a class="button button-light" href="#menu">Explorar el menú</a>
+        </div>
+        <div class="hero-feature">
+          <p class="feature-kicker">Recomendación de la casa</p>
+          <h2>Rigatoni al pesto</h2>
+          <p>
+            Pesto artesanal, parmesano y albahaca fresca: un plato para compartir
+            y disfrutar juntos.
+          </p>
+          <strong class="feature-price">COP $28.000</strong>
+        </div>
+      </div>
+      <div class="hero-bottom container">
+        <span>Ingredientes frescos</span>
+        <span>Preparación artesanal</span>
+        <span>Hecho para compartir</span>
+      </div>
+    </header>
+
+    <main>
+      <section id="menu" class="menu-section section container">
+        <div class="section-heading">
+          <p class="eyebrow eyebrow-dark">Nuestra selección</p>
+          <h2>Pastas para cada antojo</h2>
+          <p>Elige tu favorita y nosotros nos encargamos del resto.</p>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card">
+            <img
+              class="dish-photo"
+              src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=900&q=80"
+              alt="Pasta francesa cremosa con champiñones"
+            />
+            <div class="dish-mark" aria-hidden="true">01</div>
+            <p class="dish-origin">Inspiración francesa</p>
+            <h3>Pasta Francesa</h3>
+            <p class="dish-description">
+              Crema suave, queso Gruyère, champiñones y ajo dorado.
+            </p>
+            <div class="dish-bottom">
+              <span class="dish-price">COP $26.000</span>
+              <button class="add-button" type="button">Agregar</button>
+            </div>
+          </article>
+
+          <article class="menu-card menu-card-featured">
+            <img
+              class="dish-photo"
+              src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=80"
+              alt="Pasta italiana con tomate y hierbas frescas"
+            />
+            <div class="dish-mark" aria-hidden="true">02</div>
+            <p class="dish-origin">Clásico italiano</p>
+            <h3>Pasta Italiana</h3>
+            <p class="dish-description">
+              Tomate, albahaca fresca, parmesano y un toque de vino tinto.
+            </p>
+            <div class="dish-bottom">
+              <span class="dish-price">COP $24.000</span>
+              <button class="add-button" type="button">Agregar</button>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <img
+              class="dish-photo"
+              src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?auto=format&fit=crop&w=900&q=80"
+              alt="Penne con salsa y queso"
+            />
+            <div class="dish-mark" aria-hidden="true">03</div>
+            <p class="dish-origin">Especial de la casa</p>
+            <h3>Pasta Pene</h3>
+            <p class="dish-description">
+              Salsa cremosa, tomate seco, pesto y pimienta negra.
+            </p>
+            <div class="dish-bottom">
+              <span class="dish-price">COP $29.000</span>
+              <button class="add-button" type="button">Agregar</button>
+            </div>
+          </article>
+        </div>
+        <p class="order-status" id="order-status" aria-live="polite"></p>
+      </section>
+
+      <section id="nosotros" class="about-section">
+        <div class="container about-content">
+          <div>
+            <p class="eyebrow">Nuestra esencia</p>
+            <h2>Tradición, ingredientes frescos y una mesa para todos.</h2>
+          </div>
+          <p>
+            En Pasta Deliziosa unimos sabores franceses e italianos en un ambiente
+            cálido. Cada plato se prepara al momento para que disfrutes una
+            experiencia sencilla, cuidada y memorable.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contacto" class="footer">
+      <div class="container footer-content">
+        <div>
+          <a class="brand" href="#inicio">PASTA <span>DELIZIOSA</span></a>
+          <p class="footer-note">Un buen plato siempre reúne a la gente.</p>
+        </div>
+        <address class="contact-info">
+          <p>Bogotá, Colombia</p>
+          <a href="tel:+573453124681">+57 345 312 4681</a>
+          <a href="mailto:PASTADELIZIOSA@gmail.com">PASTADELIZIOSA@gmail.com</a>
+        </address>
+      </div>
+      <p class="copyright">
+        © <span id="year"></span> Pasta Deliziosa. Todos los derechos reservados.
+      </p>
+    </footer>
+  </body>
+</html>
